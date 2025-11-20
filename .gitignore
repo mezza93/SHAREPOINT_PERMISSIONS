@@ -1,5 +1,5 @@
-# Ignore actual configuration files (keep example only)
-config.json
+# Note: config.json is included in repo as default configuration
+# Users can modify it locally for their needs
 
 # Ignore export files
 *.xlsx

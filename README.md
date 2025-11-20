@@ -66,34 +66,41 @@ Install-Module -Name ImportExcel -Force -AllowClobber -Scope CurrentUser
 
 ## Quick Start
 
-### Option 1: Using Configuration File (Recommended)
+### Option 1: One-Click Execution (Easiest)
 
-1. **Create configuration file:**
+**Just run the script - no configuration needed!**
+
+```powershell
+.\Start-Audit.ps1
+```
+
+This script:
+- ✅ Automatically uses the included `config.json` (pre-configured for Sports & Spinal Physio sites)
+- ✅ Creates config from example if missing
+- ✅ Shows you the current settings before starting
+- ✅ Pauses at the end so you can see results
+- ✅ Perfect for double-clicking from Windows Explorer
+
+**For Windows Explorer:** Right-click `Start-Audit.ps1` → **Run with PowerShell**
+
+### Option 2: Using Configuration File
+
+1. **Edit config.json** with your site URLs (already created for you):
    ```powershell
-   Copy-Item config.example.json config.json
+   notepad config.json
    ```
 
-2. **Edit config.json** with your site URLs and preferences:
-   ```json
-   {
-     "SiteUrls": [
-       "https://yourtenant.sharepoint.com/sites/site1",
-       "https://yourtenant.sharepoint.com/sites/site2"
-     ],
-     "ExportPath": "C:\\Temp\\PermissionsAudit.xlsx",
-     "IncludeListItems": false,
-     "IncludeFolders": true,
-     "ExpandGroupMembership": true,
-     "ExportFormat": "Excel"
-   }
-   ```
-
-3. **Run the audit:**
+2. **Run the audit:**
    ```powershell
    .\Run-Audit.ps1
    ```
 
-### Option 2: Direct Command Line
+   Or use a custom config:
+   ```powershell
+   .\Run-Audit.ps1 -ConfigFile ".\my-custom-config.json"
+   ```
+
+### Option 3: Direct Command Line (Advanced)
 
 ```powershell
 .\SharePoint-Permissions-Audit.ps1 `
