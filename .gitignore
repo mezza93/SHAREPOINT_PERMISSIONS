@@ -1,0 +1,33 @@
+# Ignore actual configuration files (keep example only)
+config.json
+
+# Ignore export files
+*.xlsx
+*.csv
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+~$*
+
+# Ignore output directories
+output/
+exports/
+reports/
+
+# Windows thumbnail cache
+Thumbs.db
+
+# macOS
+.DS_Store
+
+# PowerShell
+*.ps1xml
+
+# Backup files
+*.bak
+*.backup
+*~

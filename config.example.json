@@ -1,0 +1,22 @@
+{
+  "SiteUrls": [
+    "https://sportsandspinalphysio.sharepoint.com/sites/Intranet",
+    "https://sportsandspinalphysio.sharepoint.com/sites/ClinicalOperations",
+    "https://sportsandspinalphysio.sharepoint.com/sites/Administration",
+    "https://sportsandspinalphysio.sharepoint.com/sites/Clinical",
+    "https://sportsandspinalphysio.sharepoint.com/sites/GroupInformationTrainingInservices",
+    "https://sportsandspinalphysio.sharepoint.com/sites/TRS",
+    "https://sportsandspinalphysio.sharepoint.com/sites/TRSOperations",
+    "https://sportsandspinalphysio.sharepoint.com/sites/TRSAdmin",
+    "https://sportsandspinalphysio.sharepoint.com/sites/TRSClinical",
+    "https://sportsandspinalphysio.sharepoint.com/sites/PODClinical",
+    "https://sportsandspinalphysio.sharepoint.com/sites/PODOperations"
+  ],
+  "ExportPath": "C:\\Temp\\SportsSpinal_SharePointPermissionsAudit.xlsx",
+  "IncludeListItems": false,
+  "IncludeFolders": true,
+  "ExpandGroupMembership": true,
+  "ExportFormat": "Excel",
+  "LogPath": "C:\\Temp\\SharePointAudit.log",
+  "MaxRetries": 3
+}
